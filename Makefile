@@ -1,8 +1,7 @@
 build:
-  docker build -t cam-test .
+	docker build -t cam-test .
 
 run:
-  docker run -it -p 1000:1000 --device /dev/video0 cam-test sh
+	docker run -it -p 8000:8000 --device /dev/video0 cam-test sh
 
-
-#see files -> python -m SimpleHTTPServer 1000
+#see files -> python -m SimpleHTTPServer 8000
